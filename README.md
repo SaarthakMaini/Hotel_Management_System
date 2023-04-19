@@ -13,7 +13,7 @@ For example, the person with the Employee permissions can only change data for t
 For running the code sample on your laptop/PC, please read the following for setup and installation requirements!
 
 ## Note: I have made a video on the same for further reference. I have explained the installation, given a brief about my code sample and showed how to run the program!
-<a href="https://youtu.be/GB4nHmv9asA">Link To The Video</a>
+<strong><a href="https://youtu.be/GB4nHmv9asA">Link To The Video</a></strong>
 
 We would be downloading:<br>
 **Python<br>
@@ -41,7 +41,9 @@ Pymysql module<br>**
 ![image](https://user-images.githubusercontent.com/94912101/160829622-da0d1751-3ac2-4422-b8ca-405c897fe8c0.png)
 * Click on "No thanks, start my download"
 <br>
+
 ![image](https://user-images.githubusercontent.com/94912101/160830251-dfd4a978-c898-4a24-8414-9fe2d0851a94.png)
+
 * After the installer opens, click on the "Developer Default Option"
 ![image](https://user-images.githubusercontent.com/94912101/160832206-7578342c-30c2-4ece-93f4-ad0549333b0f.png)
 * Now specify your Install directory<br>
