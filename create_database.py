@@ -1,7 +1,7 @@
 import pymysql
-vvvv=input("Please enter your SQL server username:")
-uuuu=input("Please enter your SQL server password:")
-conn=pymysql.connect(host="localhost",user=vvvv,password=uuuu)
+username=input("Please enter your SQL server username:")
+passw=input("Please enter your SQL server password:")
+conn=pymysql.connect(host="localhost",user=username,password=passw)
 cursor=conn.cursor()
 cursor.execute("CREATE DATABASE PROJECT")
 print("Database created!!")
@@ -13,7 +13,6 @@ cursor.execute("CREATE TABLE User(USER_ID CHAR(10) PRIMARY KEY,ROLE_NAME CHAR(10
 cursor.execute("CREATE TABLE Customer(Cust_Id char(20) Primary key,Cust_Name char(40),Age_18_Above char(1),Cust_Mobile char(10),Cust_Email char(40),Identification_Document char(1));")
 cursor.execute("CREATE TABLE Booking(ROOM_ID CHAR(20),START_DATE CHAR(10),END_DATE CHAR(10),BOOKING_ID CHAR(30) PRIMARY KEY ,CUST_ID CHAR(20));")
 cursor.execute("CREATE TABLE Payments(Pay_Id CHAR(10) PRIMARY KEY,CUST_ID CHAR(20),P_DATE DATE,AMOUNT INT,DESCRIPTION LONGTEXT,BOOKING_ID CHAR(30));")
-print("error check")
 cursor.execute("CREATE TABLE Employee(E_Id CHAR(5) PRIMARY KEY,E_Name CHAR(30),SALARY INT);")
 print("Tables created!!")
 cursor.execute("ALTER TABLE User ADD FOREIGN KEY (ROLE_NAME) REFERENCES Roles(ROLE_NAME);")
